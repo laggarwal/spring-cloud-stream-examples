@@ -1,0 +1,96 @@
+########### Spring Cloud Stream Configuration
+
+spring.cloud.stream:
+  function:
+    definition: consumeStockOrdersMulti
+    bindings:
+      consumeStockOrdersMulti-in-0: dhq-ks-stock-orders
+
+  kafka:
+    streams:
+      binder:
+        applicationId: dhq-ks-app-multiconsumer
+        deserializationExceptionHandler: logAndContinue
+        configuration:
+          commit.interval.ms: 0
+          cache.max.bytes.buffering: 0
+          state.dir: state-store
+          schema:
+            registry:
+              url: https://schemaregistry.domainname.com:443
+              ssl:
+                truststore:
+                  location: c:/pathto/kafkaclient-truststore.jks
+                  password: testpassword
+                  type: JKS
+                keystore:
+                  location: c:/pathto/kafkaclient-keystore.jks
+                  password: testpassword
+          default:
+            key.serde: org.apache.kafka.common.serialization.Serdes$StringSerde
+            #value.serde: org.apache.kafka.common.serialization.Serdes$StringSerde
+            #value.serde: io.confluent.kafka.streams.serdes.avro.GenericAvroSerde
+            value.serde: io.confluent.kafka.streams.serdes.avro.SpecificAvroSerde
+            value:
+              subject:
+                name:
+                  strategy: io.confluent.kafka.serializers.subject.TopicNameStrategy
+          security:
+            protocol: SSL
+          ssl:
+            truststore:
+              location: c:/pathto/kafkaclient-truststore.jks
+              password: testpassword
+              type: JKS
+            keystore:
+              location: c:/pathto/kafkaclient-keystore.jks
+              password: testpassword
+        brokers: kafka.domainname.com:9092
+
+
+
+
+########## Spring Kafka Configuration (Only Used for placing test messages)
+
+spring:
+  kafka:
+    producer:
+      client-id: avro-pos-simulator
+      bootstrap-servers: kafka.domainname.com:9092
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: io.confluent.kafka.serializers.KafkaAvroSerializer
+      properties:
+        security:
+          protocol: SSL
+        auto:
+          register:
+            schemas: false
+        value:
+          subject:
+            name:
+              strategy: io.confluent.kafka.serializers.subject.TopicNameStrategy
+        schema:
+          registry:
+            url: https://schemaregistry.domainname.com:443
+            ssl:
+              truststore:
+                location: c:/pathto/kafkaclient-truststore.jks
+                password: testpassword
+                type: JKS
+              keystore:
+                location: c:/pathto/kafkaclient-keystore.jks
+                password: testpassword
+        ssl:
+          truststore:
+            location: c:/Users/pathto/kafkaclient-truststore.jks
+            password: testpassword
+            type: JKS
+          keystore:
+            location: c:/Users/pathto/kafkaclient-keystore.jks
+            password: testpassword
+
+
+application:
+  configs:
+    message.count: 11
+    stockorder.topic.name: dhq-ks-stock-orders
