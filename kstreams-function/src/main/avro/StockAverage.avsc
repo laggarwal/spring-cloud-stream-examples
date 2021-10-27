@@ -1,0 +1,10 @@
+{
+  "namespace": "com.example.streams.demo.model",
+  "type": "record",
+  "name": "StockAverage",
+  "fields": [
+    {"name": "stockSymbol","type": ["null","string"]},
+    {"name": "avgPrice","type": ["null","double"]},
+    {"name": "totalQty","type": ["null","int"]}
+  ]
+}

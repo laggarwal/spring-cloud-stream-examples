@@ -1,0 +1,15 @@
+{
+  "namespace": "com.example.streams.demo.model",
+  "type": "record",
+  "name": "TradeConfirmation",
+  "fields": [
+    {"name": "stockSymbol","type": ["null","string"]},
+    {"name": "createdTime","type": ["null","long"]},
+    {"name": "stockPrice","type": ["null","double"]},
+    {"name": "stockQty","type": ["null","int"]},
+    {"name": "customerId","type": ["null","string"]},
+    {"name": "stockType","type": ["null","string"]},
+    {"name": "orderId","type": ["null","string"]},
+    {"name": "tradeStatus","type": ["null","string"]}
+  ]
+}

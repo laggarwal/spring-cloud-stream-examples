@@ -1,0 +1,11 @@
+{
+  "namespace": "com.example.streams.demo.model",
+  "type": "record",
+  "name": "StockOrdersActivityAlert",
+  "fields": [
+    {"name": "customerID","type": ["null","string"]},
+    {"name": "activityStartTime","type": ["null","long"]},
+    {"name": "activityEndTime","type": ["null","long"]},
+    {"name": "orderCount","type": ["null","long"]}
+  ]
+}

@@ -1,0 +1,22 @@
+[
+  {"stockSymbol": "MSFT", "createdTime": 1633381024789,"stockPrice": 2.50, "stockQty": 10, "customerId": "Vanguard","stockType": "ETF", "orderId": "101"},
+  {"stockSymbol": "MSFT", "createdTime": 1633381024789,"stockPrice": 4.50, "stockQty": 10, "customerId": "Vanguard","stockType": "ETF", "orderId": "2"},
+  {"stockSymbol": "MSFT", "createdTime": 1633381024789,"stockPrice": 1.50, "stockQty": 20, "customerId": "Vanguard","stockType": "ETF", "orderId": "3"},
+  {"stockSymbol": "TSLA", "createdTime": 1633381024789,"stockPrice": 2.50, "stockQty": 200,"customerId": "Fidelity","stockType": "OPTION","orderId": "401"},
+  {"stockSymbol": "AAPL", "createdTime": 1633381024789,"stockPrice": 3.50, "stockQty": 20, "customerId": "ARK","stockType": "STOCK", "orderId": "501"},
+  {"stockSymbol": "TSLA", "createdTime": 1633381024789,"stockPrice": 5.50, "stockQty": 25, "customerId": "Fidelity","stockType": "OPTION", "orderId": "6"},
+  {"stockSymbol": "TSLA", "createdTime": 1633381024789,"stockPrice": 5.40, "stockQty": 125,"customerId": "Fidelity","stockType": "OPTION", "orderId": "7"},
+  {"stockSymbol": "TSLA", "createdTime": 1633381024789,"stockPrice": 5.20, "stockQty": 825,"customerId": "Fidelity","stockType": "OPTION", "orderId": "8"},
+  {"stockSymbol": "TSLA", "createdTime": 1633381024789,"stockPrice": 5.70, "stockQty": 520,"customerId": "Fidelity","stockType": "OPTION", "orderId": "9"},
+  {"stockSymbol": "AAPL", "createdTime": 1633381024789,"stockPrice": 3.50, "stockQty": 102,"customerId": "ARK","stockType": "STOCK", "orderId": "501"},
+  {"stockSymbol": "TSLA", "createdTime": 1633381024789,"stockPrice": 9.50, "stockQty": 20, "customerId": "ARK","stockType": "OPTION", "orderId": "11"},
+  {"stockSymbol": "AAPL", "createdTime": 1633381024789,"stockPrice": 3.50, "stockQty": 102,"customerId": "ARK","stockType": "STOCK", "orderId": "502"},
+  {"stockSymbol": "AAPL", "createdTime": 1633381024789,"stockPrice": 1.50, "stockQty": 104,"customerId": "ARK","stockType": "STOCK", "orderId": "503"},
+  {"stockSymbol": "AAPL", "createdTime": 1633381024789,"stockPrice": 2.50, "stockQty": 106,"customerId": "ARK","stockType": "STOCK", "orderId": "504"},
+  {"stockSymbol": "AAPL", "createdTime": 1633381024789,"stockPrice": 3.50, "stockQty": 108,"customerId": "ARK","stockType": "STOCK", "orderId": "505"},
+  {"stockSymbol": "AAPL", "createdTime": 1633381024789,"stockPrice": 4.50, "stockQty": 110,"customerId": "ARK","stockType": "STOCK", "orderId": "506"},
+  {"stockSymbol": "AAPL", "createdTime": 1633381024789,"stockPrice": 5.50, "stockQty": 112,"customerId": "ARK","stockType": "STOCK", "orderId": "507"},
+  {"stockSymbol": "AAPL", "createdTime": 1633381024789,"stockPrice": 6.50, "stockQty": 112,"customerId": "ARK","stockType": "STOCK", "orderId": "508"},
+  {"stockSymbol": "AAPL", "createdTime": 1633381024789,"stockPrice": 7.50, "stockQty": 122,"customerId": "ARK","stockType": "STOCK", "orderId": "509"},
+  {"stockSymbol": "AAPL", "createdTime": 1633381024789,"stockPrice": 8.50, "stockQty": 122,"customerId": "ARK","stockType": "STOCK", "orderId": "510"}
+]
